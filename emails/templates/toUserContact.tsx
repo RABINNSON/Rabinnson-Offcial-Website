@@ -26,7 +26,12 @@ export const ToUserContact: React.FC<ToUserContactProps> = ({ firstName }) => {
           <div className="content">
             <h1 style={{ marginTop: 0 }}>Hi {firstName},</h1>
             <p style={{ color: '#666' }}>We received your message and our team will get back to you shortly. In the meantime, feel free to explore our website or reply to this email if you need immediate assistance.</p>
-            <p style={{ marginTop: 24 }}>Best regards,<br/>Rabinnson Private Limited</p>
+            <p style={{ marginTop: 24 }}>Best regards,<br />Rabinnson Private Limited</p>
+            <p style={{ color: '#999', fontSize: '12px', marginTop: 20, lineHeight: '1.5' }}>
+              WeWork, 13th Floor, Building No 9, IT Park,<br />
+              Shaikpet, Hi Tech City, Hyderabad - 500081,<br />
+              Telangana State
+            </p>
           </div>
         </div>
       </body>

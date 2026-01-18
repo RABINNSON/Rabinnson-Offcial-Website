@@ -8,8 +8,8 @@ export const ToUserEmail: React.FC<ToUserEmailProps> = ({ firstName }) => {
     return (
         <html>
             <head>
-                                <style>
-                                        {`
+                <style>
+                    {`
                         body{font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
                         .container{max-width:600px;width:100%;background:#fff;border-radius:8px;overflow:hidden;margin:20px auto;border:1px solid #e6e6e6}
                         .header{background:#000;padding:28px 20px;text-align:center;color:#fff}
@@ -18,7 +18,7 @@ export const ToUserEmail: React.FC<ToUserEmailProps> = ({ firstName }) => {
                         .btn:hover{background-color:#333333 !important}
                         @media only screen and (max-width:600px){.content{padding:20px}.logo{max-width:160px}}
                     `}
-                                </style>
+                </style>
             </head>
             <body style={{ margin: 0, padding: 0, backgroundColor: '#f4f4f4', fontFamily: 'Arial, sans-serif' }}>
                 <table width="100%" cellPadding="0" cellSpacing="0" style={{ backgroundColor: '#f4f4f4' }}>
@@ -70,20 +70,14 @@ export const ToUserEmail: React.FC<ToUserEmailProps> = ({ firstName }) => {
                                             </tr>
                                             <tr>
                                                 <td style={{ paddingBottom: '5px' }}>
-                                                    <span style={{ color: '#888888', fontSize: '13px' }}>Cell No: </span>
-                                                    <a href="tel:+916372904670" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>+91 63729 04670</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style={{ paddingBottom: '5px' }}>
-                                                    <span style={{ color: '#888888', fontSize: '13px' }}>Helpdesk: </span>
-                                                    <a href="tel:+919668901241" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>+91 966890 1241</a>
+                                                    <span style={{ color: '#888888', fontSize: '13px' }}>Call Us: </span>
+                                                    <a href="tel:+919030741174" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>+91 9030741174</a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style={{ paddingBottom: '5px' }}>
                                                     <span style={{ color: '#888888', fontSize: '13px' }}>e-Mail: </span>
-                                                    <a href="mailto:krishna@rabinnson.in" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>krishna@rabinnson.in</a>
+                                                    <a href="mailto:startup@rabinnson.com" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>startup@rabinnson.com</a>
                                                 </td>
                                             </tr>
                                             <tr>

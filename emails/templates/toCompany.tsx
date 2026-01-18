@@ -20,8 +20,8 @@ export const ToCompanyEmail: React.FC<ToCompanyEmailProps> = ({
     return (
         <html>
             <head>
-                                <style>
-                                        {`
+                <style>
+                    {`
                         :root{color-scheme: light dark}
                         body{font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
                         .container{max-width:600px;width:100%;background-color:#ffffff;border-radius:8px;overflow:hidden;margin:20px 0;border:1px solid #e6e6e6}
@@ -37,7 +37,7 @@ export const ToCompanyEmail: React.FC<ToCompanyEmailProps> = ({
                             td{display:block;width:100%}
                         }
                     `}
-                                </style>
+                </style>
             </head>
             <body style={{ margin: 0, padding: 0, backgroundColor: '#f4f4f4', fontFamily: 'Arial, sans-serif' }}>
                 <table width="100%" cellPadding="0" cellSpacing="0" style={{ backgroundColor: '#f4f4f4' }}>

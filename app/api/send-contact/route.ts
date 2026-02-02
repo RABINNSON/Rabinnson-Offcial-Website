@@ -3,9 +3,6 @@ import { Resend } from 'resend';
 import { ToCompanyContact } from '@/emails/templates/toCompanyContact';
 import { ToUserContact } from '@/emails/templates/toUserContact';
 
-// Read key from environment at runtime. Do NOT construct the client at module load
-// time because the Resend constructor throws when the key is missing which
-// breaks Next.js builds that import this module for page-data collection.
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
 function getResendClient() {

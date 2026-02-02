@@ -3,9 +3,9 @@ import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
 import Eclipse from '@/assets/images/lates-project-eclipse.png';
-import Portofolio1 from '@/assets/images/consysmindlanding.png';
-import Portofolio2 from '@/assets/images/Portfolio-2.png';
-import Portofolio3 from '@/assets/images/Portfolio-3.png';
+import Portofolio1 from '@/assets/images/Hotel.avif';
+import Portofolio2 from '@/assets/images/Finance.avif';
+import Portofolio3 from '@/assets/images/consysmindlanding.webp';
 import Portofolio4 from '@/assets/images/Portfolio-4.png';
 import Portofolio5 from '@/assets/images/Portfolio-5.png';
 

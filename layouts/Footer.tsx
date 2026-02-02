@@ -8,7 +8,7 @@ import XLogo from "@/assets/images/XLogo.svg";
 import InstagramLogo from "@/assets/images/InstagramLogo.svg";
 import LinkedinLogo from "@/assets/images/LinkedinLogo.svg";
 import IcCopyRight from "@/assets/icons/copyRight.svg";
-import Icons from "./Icons";
+    
 import Button from "./Button";
 
 export default function Footer() {
@@ -116,12 +116,10 @@ export default function Footer() {
           <div className="flex items-center gap-[8px]">
             <IcCopyRight className="w-5" />
             <div className="text-white font-medium">
-              2025 Adverza, All right reserved
+              2026 , All right reserved
             </div>
           </div>
-          <div className="flex justify-between items-center gap-[8px] text-white cursor-pointer">
-            CONTACT SUPPORT <Icons name="arrowRight" className="w-5" />
-          </div>
+          
         </div>
       </div>
     </div>

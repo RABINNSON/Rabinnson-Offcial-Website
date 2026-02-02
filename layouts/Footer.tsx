@@ -116,7 +116,7 @@ export default function Footer() {
           <div className="flex items-center gap-[8px]">
             <IcCopyRight className="w-5" />
             <div className="text-white font-medium">
-              2026 Rabinnson Private limited , All right reserved
+              2026 Rabinnson Private limited , All right reserved .
             </div>
           </div>
           

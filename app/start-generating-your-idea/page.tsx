@@ -1,8 +1,6 @@
 "use client";
 
 import Image from 'next/image';
-import React from "react";
-import { ArrowRight } from "lucide-react";
 import HeroBackground from "@/components/HeroBackground";
 import Typography from "@/components/typography";
 import IdeaForm from "./IdeaForm";

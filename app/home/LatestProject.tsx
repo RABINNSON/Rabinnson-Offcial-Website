@@ -3,9 +3,10 @@ import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import Eclipse from '@/assets/images/lates-project-eclipse.webp';
-import Portofolio1 from '@/assets/images/Portfolio-1.webp';
-import Portofolio2 from '@/assets/images/Portfolio-2.webp';
-import Portofolio3 from '@/assets/images/Portfolio-3.webp';
+import Portofolio1 from '@/assets/images/Finance.avif';
+import Portofolio2 from '@/assets/images/Hotel.avif';
+import Portofolio3 from '@/assets/images/consysmindlanding.webp';
+import Link from "next/link";
 
 export default function LatestProject() {
     return (
@@ -20,21 +21,31 @@ export default function LatestProject() {
                         Inspiring <OptimizedImage src={Eclipse} alt="Eclipse" className="inline w-10 md:w-20" width={80} height={80} /> Possibilities
                     </div>
                 </div>
+                <Link href="/portofolio">
                 <div className="flex gap-[10px] border-b border-[#070707] dark:border-[#fff] cursor-pointer">
                     <Typography size={16} weight={500}>SEE ALL PORTOFOLIO</Typography>
                     <Icons name="arrowRight" className="w-5" />
-                </div>
+                </div>  
+                </Link>
             </div>
             <div className="mt-[40px] md:mt-[64px] flex flex-col gap-3 sm:gap-4 md:gap-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
                     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <OptimizedImage
-                            src={Portofolio1}
-                            alt="Consysmind"
-                            fill
-                            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 50vw"
-                            className="object-cover object-top hover:scale-105 transition-transform duration-500"
-                        />
+  src={Portofolio1}
+  alt="Consysmind"
+  fill
+  sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 100vw"
+  className="
+    object-cover
+    object-center
+    transition-transform
+    duration-700
+    ease-out
+    group-hover:scale-[1.03]
+  "
+/>
+
                     </div>
                     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <OptimizedImage

@@ -2,16 +2,20 @@
 
 import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 
 import Icons from "@/components/icon";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
+import Avatar1 from '@/assets/images/avatar-1.webp';
+import Avatar2 from '@/assets/images/avatar-2.webp';
+import Avatar3 from '@/assets/images/avatar-3.webp';
 
 type Testimonial = {
   name: string;
   role: string;
   message: string;
-  avatar: string;
+  avatar: any;
 };
 
 const testimonials: Testimonial[] = [
@@ -19,32 +23,32 @@ const testimonials: Testimonial[] = [
     name: "Amanda Holly",
     role: "Nursing Assistant",
     message:
-      "Our business experienced a significant transformation thanks to this team’s digital marketing expertise. They delivered tangible improvements in our online visibility.",
-    avatar: "https://randomuser.me/api/portraits/women/44.webp",
+      "Our business experienced a significant transformation thanks to this team's digital marketing expertise. They delivered tangible improvements in our online visibility.",
+    avatar: Avatar1,
   },
   {
-    name: "John Doe",
+    name: "Mark Clein",
     role: "Marketing Manager",
     message:
       "Their innovative strategies and attention to detail made a huge difference in our campaign performance. Truly outstanding work!",
-    avatar: "https://randomuser.me/api/portraits/men/32.webp",
+    avatar: Avatar2,
   },
   {
     name: "Lina Kusuma",
     role: "Founder @StartupID",
     message:
       "Pelayanan cepat, profesional, dan sangat membantu bisnis kami berkembang di dunia digital.",
-    avatar: "https://randomuser.me/api/portraits/women/68.webp",
+    avatar: Avatar3,
   },
 ];
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [mounted, setMounted] = useState(false); // ✅ track mount
+  const [mounted, setMounted] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setMounted(true); // ✅ Only render after mount
+    setMounted(true);
   }, []);
 
   const animateContent = () => {
@@ -85,7 +89,7 @@ export default function Testimonials() {
     }, 300);
   };
 
-  if (!mounted) return null; 
+  if (!mounted) return null;
 
   const current = testimonials[currentIndex];
 
@@ -118,9 +122,11 @@ export default function Testimonials() {
           </p>
 
           <div className="mt-[48px] md:mt-[64px] flex flex-col md:flex-row items-center justify-center gap-[12px] md:gap-[20px]">
-            <img
+            <Image
               src={current.avatar}
               alt={current.name}
+              width={52}
+              height={52}
               className="w-11 md:w-13 h-11 md:h-13 rounded-full object-cover"
             />
             <div className="text-center md:text-left">

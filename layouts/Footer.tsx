@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import Image from "next/image";
-const Logo = "/a.png";
+const Logo = "/a.webp";
 import XLogo from "@/assets/images/XLogo.svg";
 import InstagramLogo from "@/assets/images/InstagramLogo.svg";
 import LinkedinLogo from "@/assets/images/LinkedinLogo.svg";

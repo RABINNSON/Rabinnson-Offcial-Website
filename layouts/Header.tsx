@@ -5,7 +5,7 @@ import gsap from "gsap";
 
 import Image from "next/image";
 import Navigation from "./Navigation";
-const Logo = "/a.png";
+const Logo = "/a.webp";
 
 import Icons from "@/components/icon";
 

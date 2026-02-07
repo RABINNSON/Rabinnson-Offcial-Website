@@ -3,9 +3,16 @@ import withBundleAnalyzer from "@next/bundle-analyzer";
 
 const nextConfig: NextConfig = {
   turbopack: {}, // disables turbopack warnings
-  
+
+  // ✅ Required for static export
+  output: "export",
+  trailingSlash: true,
+
   // Image optimization configuration
   images: {
+    // ✅ Required for static export (Next Image Optimization won't work without server)
+    unoptimized: true,
+
     formats: ["image/webp", "image/avif"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -14,12 +21,12 @@ const nextConfig: NextConfig = {
     contentDispositionType: "attachment",
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  
+
   // Compiler options
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
-  
+
   // Webpack customization
   webpack(config, { dev }) {
     // SVG handling
@@ -28,7 +35,7 @@ const nextConfig: NextConfig = {
       issuer: /\.[jt]sx?$/,
       use: ["@svgr/webpack"],
     });
-    
+
     // Production optimizations
     if (!dev) {
       config.optimization = {
